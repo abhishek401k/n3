@@ -1,0 +1,116 @@
+.FoldersList {
+  width: 18%;
+
+  .create-new-folder,
+  .create-new-note {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    border: 1px solid var(--blue-muted);
+    border-radius: 8px;
+    transition: background-color 0.25s;
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .create-new-folder {
+    margin: 0 0 22px 0;
+
+    &:hover {
+      background-color: var(--blue-muted-hover);
+      cursor: pointer;
+    }
+  }
+
+  .create-new-note {
+    background-color: var(--periwinkle-light);
+    color: var(--blue-muted-hover);
+
+    &:hover {
+      background-color: var(--periwinkle-light-hover);
+      cursor: pointer;
+    }
+  }
+
+  .enter-folder-name {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    margin-bottom: 20px;
+    background-color: var(--blue-gray);
+
+    .back-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      width: 75%;
+      text-transform: capitalize;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.25s;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--periwinkle-light);
+      }
+    }
+  }
+
+  .folders {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    .folder {
+      display: flex;
+      justify-content: space-between;
+      transition: color 0.25s;
+      line-height: 2;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s, color 0.2s;
+
+      .trash-icon {
+        display: none;
+      }
+      &:hover {
+        color: var(--periwinkle-light);
+        border-bottom: 1px solid var(--periwinkle-light);
+      }
+    }
+
+    .active {
+      color: var(--periwinkle-light);
+      border-bottom: 1px solid var(--periwinkle-light);
+
+      .trash-icon {
+        display: inline-block;
+        transition: color 0.25s;
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

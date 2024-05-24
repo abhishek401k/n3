@@ -1,0 +1,30 @@
+.NotesList {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--blue-muted);
+    cursor: pointer;
+    transition: background-color 0.3s, padding 0.3s;
+
+    button {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--periwinkle);
+      padding: 1.5em 1em;
+
+      button {
+        display: inline-block;
+      }
+    }
+  }
+}

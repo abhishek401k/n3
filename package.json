@@ -1,0 +1,47 @@
+{
+  "name": "noted-web",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "author": "Meghan Bucher <115611931+megbuch@users.noreply.github.com> (https://www.github.com/megbuch)",
+  "description": "Noted is a notes app that allows users to create, edit, and save rich-text and markdown notes.",
+  "keywords": [
+    "notes",
+    "notes app",
+    "rich text",
+    "rich-text",
+    "markdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megbuch/noted-web.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tiptap/extension-color": "^2.1.11",
+    "@tiptap/extension-placeholder": "^2.1.11",
+    "@tiptap/extension-text-style": "^2.1.11",
+    "@tiptap/pm": "^2.1.11",
+    "@tiptap/react": "^2.1.11",
+    "@tiptap/starter-kit": "^2.1.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.68.0",
+    "vite": "^4.4.5"
+  }
+}

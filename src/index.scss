@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--blue-muted-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --white: #fff;
+  --black: #000;
+  --blue-gray: #2b2b3a;
+  --blue-muted: #32325e;
+  --blue-muted-hover: #181438;
+  --blue-muted-dark: #14141f;
+  --periwinkle: #464fff;
+  --periwinkle-light: #c7cbff;
+  --periwinkle-light-hover: #a1a7ff;
+  --periwinkle-light: #c7cbff;
+  --code: #fff1e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  color: var(--periwinkle);
+  text-decoration: inherit;
+
+  &:hover {
+    color: var(--periwinkle-bright);
+  }
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 15px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em;
+  line-height: 0;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: var(--blue-muted);
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: var(--periwinkle);
+  }
+}
+
+input:focus,
+textarea:focus,
+[contenteditable]:focus {
+  outline: 2px solid var(--periwinkle-light);
+  box-shadow: 0 0 3px var(--periwinkle);
+}
+
+select,
+input {
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em;
+  background-color: var(--blue-gray);
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--periwinkle-light);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--periwinkle-light-hover);
+  }
+}

@@ -1,0 +1,79 @@
+.NoteEditor {
+  width: 55%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 8px 0;
+
+    p {
+      font-size: 2em;
+    }
+  }
+
+  .tiptap {
+    background-color: transparent;
+    width: 100%;
+    min-height: 60vh;
+    padding: 1em;
+    text-align: left;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    ol {
+      padding: 0 1rem;
+    }
+
+    code {
+      background-color: var(--blue-muted-dark);
+      color: var(--code);
+    }
+
+    pre {
+      background-color: var(--blue-muted-dark);
+      color: var(--code);
+      font-family: "JetBrainsMono", monospace;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+
+      code {
+        color: inherit;
+        padding: 0;
+        background: none;
+        font-size: 1em;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    blockquote {
+      padding-left: 1rem;
+      border-left: 2px solid rgba(#0d0d0d, 0.1);
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid var(--blue-muted-dark);
+      margin: 1.5em 0;
+    }
+    border-radius: 8px;
+  }
+
+  &.editing {
+    .tiptap {
+      background-color: var(--blue-gray);
+    }
+  }
+}
